@@ -12,6 +12,7 @@
 #include <linux/vmalloc.h>
 #include <linux/debugfs.h>
 #include <linux/reboot.h>
+#include <linux/uaccess.h>
 #include "autohotplug.h"
 
 #define CREATE_TRACE_POINTS

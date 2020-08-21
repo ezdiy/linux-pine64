@@ -596,6 +596,8 @@ exit:
  */
 static int motor_fetch_sysconfig_para(enum input_sensor_type *motor_type)
 {
+	return -1;
+	/*
 	script_item_u	val;
 	script_item_value_type_e  type;
 	struct motor_config_info *data = container_of(motor_type,
@@ -638,6 +640,7 @@ static int motor_fetch_sysconfig_para(enum input_sensor_type *motor_type)
 script_get_err:
 	pr_notice("=========script_get_err============\n");
 	return -1;
+	*/
 }
 
 /******************************** MOTOR END ***********************************/

@@ -15,6 +15,7 @@
 #include <linux/of_device.h>
 #include <linux/slab.h>
 #include <linux/arisc/arisc.h>
+#include <asm/io.h>
 #include "sunxi-nmi.h"
 
 static u32 debug_mask = 0x0;
@@ -22,7 +23,7 @@ static nmi_struct *nmi_data;
 
 void clear_nmi_status(void)
 {
-	arisc_clear_nmi_status();
+	//arisc_clear_nmi_status();
 
 	return;
 }
@@ -31,7 +32,7 @@ EXPORT_SYMBOL(clear_nmi_status);
 
 void enable_nmi(void)
 {
-	arisc_enable_nmi_irq();
+	//arisc_enable_nmi_irq();
 
 	return;
 }
@@ -39,7 +40,7 @@ EXPORT_SYMBOL(enable_nmi);
 
 void disable_nmi(void)
 {
-	arisc_disable_nmi_irq();
+	//arisc_disable_nmi_irq();
 
 	return;
 }
@@ -58,7 +59,7 @@ void set_nmi_trigger(u32 trigger)
 	else if (IRQF_TRIGGER_RISING==trigger)
 		tmp = NMI_IRQ_PO_EDGE;
 
-	arisc_set_nmi_trigger(tmp);
+	//arisc_set_nmi_trigger(tmp);
 
 	return;
 }

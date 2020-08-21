@@ -13,6 +13,8 @@
 #include <linux/regulator/consumer.h>
 #include <linux/platform_device.h>
 #include <linux/sys_config.h>
+#include <linux/capability.h>
+
 
 struct sunxi_wlan_platdata {
 	int bus_index;

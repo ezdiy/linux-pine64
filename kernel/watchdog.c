@@ -27,6 +27,7 @@
 #include <linux/of.h>
 #include <linux/of_address.h>
 #include <asm/irq_regs.h>
+#include <asm/io.h>
 #include <linux/kvm_para.h>
 #include <linux/perf_event.h>
 #include <linux/sched.h>
